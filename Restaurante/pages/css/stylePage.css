@@ -1,0 +1,74 @@
+/*Colocar sempre isto*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(151, 149, 146);
+  background-size: cover;
+  background-repeat: repeat;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Monaco", "Courier New", monospace;
+}
+
+h2{
+  display: flex;
+  justify-content: center;
+  font-family: "Monaco", "Courier New", monospace;
+}
+
+.frontImageArea {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../image/inside.png");
+  background-size: cover;
+}
+
+.frontImage {
+  width: 30%;
+  height: 30%;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+footer {
+  font-family: "Monaco", "Courier New", monospace;
+  background-color: rgb(221, 125, 0);
+  display: flex; 
+  justify-content: space-between;
+}
+
+.footerContacts {
+  margin: 15px;
+  display: grid;
+  justify-content: flex-start;
+  align-items: center; 
+  width: 100px;
+  height: 100px;
+}
+
+.footerMsg{
+  margin: 0px;
+  display: grid;
+  justify-self: center;
+  align-items: center;
+}
+
+.footerMap {
+  margin: 15px;
+  display: flex; 
+  justify-content: flex-end;
+  align-items: center;
+}

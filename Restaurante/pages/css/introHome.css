@@ -1,0 +1,28 @@
+.divAreaIntroHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: white;
+    background-size: cover;
+    margin: 2.5% 15%;
+    
+}
+
+.textAreaIntroHome{
+    display: grid;
+    justify-content: flex-end;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+}
+.imgAreaIntroHome{
+    display: grid;
+    justify-content: flex-start;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+}
+
