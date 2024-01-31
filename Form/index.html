@@ -1,0 +1,58 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <form>
+      <div>
+        <label>Name: <input type="text" name="name" /></label>
+        <label>Cell Phone: <input type="text" name="cellphone" /></label>
+      </div>
+
+      <div>
+        <label>Gender: </label>
+        <label class="genderRadio"
+          ><input type="radio" name="gender" id="genderM" />Male</label
+        >
+        <label class="genderRadio"
+          ><input type="radio" name="gender" id="genderF" />Female</label
+        >
+      </div>
+
+      <div>
+        <label>Email: <input type="email" name="email" /></label>
+        <label
+          >Password:
+          <input
+            type="password"
+            name="password"
+            placeholder="Minimum eight characters, at least one letter and one number:"
+        /></label>
+      </div>
+
+      <div>
+        <label>Hobbies:</label>
+        <label><input type="checkbox" id="music" />Music</label>
+        <label><input type="checkbox" id="cinema" />Cinema</label>
+        <label><input type="checkbox" id="dance" />Dance</label>
+        <label
+          ><input type="checkbox" id="photography" disabled />Photography</label
+        >
+      </div>
+
+      <div>
+        <label
+          >Age: <span>0</span> <input type="range" name="age" id="age"
+        /></label>
+      </div>
+
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+  <script src="login.js"></script>
+</html>

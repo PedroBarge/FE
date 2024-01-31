@@ -1,0 +1,18 @@
+form label{
+    display: inline-flex;
+    margin-top: 2%;
+}
+
+input{
+    margin-left: 5px;
+}
+.genderRadio{
+    margin: 0px;
+}
+input[type=password], input[type=text], input[type=email]{
+    width: 400px;
+    border: none;
+}
+span{
+    margin-left: 5px;
+}
