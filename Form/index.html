@@ -6,7 +6,7 @@
     <title>Forms</title>
   </head>
   <body>
-    <form>
+    <form id="loginForm">
       <div>
         <label>Name: <input type="text" name="name" /></label>
         <label>Cell Phone: <input type="text" name="cellphone" /></label>
@@ -23,11 +23,12 @@
       </div>
 
       <div>
-        <label>Email: <input type="email" name="email" /></label>
+        <label>Email: <input type="email" id="email" name="email" /></label>
         <label
           >Password:
           <input
             type="password"
+            id="password"
             name="password"
             placeholder="Minimum eight characters, at least one letter and one number:"
         /></label>
@@ -50,9 +51,9 @@
       </div>
 
       <div>
-        <button type="submit">Submit</button>
+        <input type="submit" value="Submit" />
       </div>
     </form>
+    <script src="login.js"></script>
   </body>
-  <script src="login.js"></script>
 </html>
