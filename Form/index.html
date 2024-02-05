@@ -8,8 +8,14 @@
   <body>
     <form id="loginForm">
       <div>
-        <label>Name: <input type="text" name="name" /></label>
-        <label>Cell Phone: <input type="text" name="cellphone" /></label>
+        <label>Name: <input type="text" name="name" required /></label>
+        <label
+          >Cell Phone: +351<input
+            type="text"
+            name="cellphone"
+            pattern="^(91|92|93|96)\d{7}$"
+            placeholder="Enter a valid cell phone number starting with 91, 92, 93, or 96 "
+        /></label>
       </div>
 
       <div>
@@ -23,7 +29,11 @@
       </div>
 
       <div>
-        <label>Email: <input type="email" id="email" name="email" /></label>
+        <label
+          >Email: <input type="email" id="email" name="email" required
+          placeholder="Enter a valid email address"
+
+        /></label>
         <label
           >Password:
           <input
@@ -45,15 +55,27 @@
       </div>
 
       <div>
-        <label
-          >Age: <span>0</span> <input type="range" name="age" id="age"
-        /></label>
+        <label for="age">Age: <output id="ageOutput">18</output></label>
+        <input
+          type="range"
+          name="age"
+          id="age"
+          min="18"
+          max="100"
+          value="18"
+          oninput="ageOutput.value = age.value"
+        />
       </div>
 
       <div>
-        <input type="submit" value="Submit" />
+        <input id="submit" type="submit" value="Submit" />
       </div>
     </form>
+
+
+    <div id="formResult"></div>
+
+
     <script src="login.js"></script>
   </body>
 </html>
