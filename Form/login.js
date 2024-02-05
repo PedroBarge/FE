@@ -1,7 +1,7 @@
 const submit = document.getElementById("submit");
 
 form.addEventListener("submit", (e) => {
-    //e.preventDefault();
+    e.preventDefault();
 });
 
 submit.addEventListener("click",() => {
@@ -10,10 +10,7 @@ submit.addEventListener("click",() => {
 
 
 function submitForm() {
-    // Get form data
     const formData = new FormData(document.getElementById('loginForm'));
-
-    // Display form data in the result div
     const resultDiv = document.getElementById('formResult');
     resultDiv.innerHTML = '';
 
