@@ -12,13 +12,13 @@ function App() {
   //Functions
   const calculation = () => {
     if (opera == "Addition") {
-      return setTotal(frNum + secNum);
+       setTotal(parseFloat(frNum) + parseFloat(secNum));
     } else if (opera == "Subtraction") {
-      return setTotal(frNum - secNum);
+       setTotal(frNum - secNum);
     } else if (opera == "Multiplication") {
-      return setTotal(frNum * secNum);
+       setTotal(frNum * secNum);
     } else if (opera == "Division") {
-      return setTotal(frNum / secNum);
+       setTotal(frNum / secNum);
     }
   };
 
