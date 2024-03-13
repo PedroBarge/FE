@@ -11,14 +11,17 @@ function App() {
   //------------------------------------------------------------------------------
   //Functions
   const calculation = () => {
+  let num1 = parseFloat(frNum);
+  let num2 = parseFloat(secNum);
+
     if (opera == "Addition") {
-       setTotal(parseFloat(frNum) + parseFloat(secNum));
+       setTotal(num1 + num2);
     } else if (opera == "Subtraction") {
-       setTotal(frNum - secNum);
+       setTotal(num1 - num2);
     } else if (opera == "Multiplication") {
-       setTotal(frNum * secNum);
+       setTotal(num1 * num2);
     } else if (opera == "Division") {
-       setTotal(frNum / secNum);
+       setTotal(num1 / num2);
     }
   };
 
